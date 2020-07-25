@@ -75,8 +75,8 @@ resource "aws_security_group" "allow_http" {
   }
   ingress {
     description = "NFS"
-    from_port   = 2040
-    to_port     = 2040
+    from_port   = 2049
+    to_port     = 2049
     protocol    = "tcp"
     cidr_blocks = [ "0.0.0.0/0" ]
   }
